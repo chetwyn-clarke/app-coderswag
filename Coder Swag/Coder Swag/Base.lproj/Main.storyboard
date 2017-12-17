@@ -34,19 +34,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Dq0-NJ-GEk">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Dq0-NJ-GEk">
                                 <rect key="frame" x="0.0" y="60" width="375" height="543"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="135" id="N9D-FC-xt2" customClass="CategoryCell" customModule="Coder_Swag" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="135" id="N9D-FC-xt2" customClass="CategoryCell" customModule="Coder_Swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="135"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="N9D-FC-xt2" id="LCV-Mi-wFb">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="134.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="135"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="KW0-xA-dmT">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="134.5"/>
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="128.5"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkQ-Ma-FgE">
                                                     <rect key="frame" x="95" y="50" width="185" height="35"/>
@@ -59,13 +59,12 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.25436094570000001" green="1" blue="0.1333677835" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstItem="pkQ-Ma-FgE" firstAttribute="centerX" secondItem="LCV-Mi-wFb" secondAttribute="centerX" id="BEb-an-TIk"/>
                                                 <constraint firstItem="KW0-xA-dmT" firstAttribute="leading" secondItem="LCV-Mi-wFb" secondAttribute="leading" id="b8K-5e-1DX"/>
                                                 <constraint firstAttribute="trailing" secondItem="KW0-xA-dmT" secondAttribute="trailing" id="g7f-rn-z5b"/>
-                                                <constraint firstAttribute="bottom" secondItem="KW0-xA-dmT" secondAttribute="bottom" id="xKL-dU-oK6"/>
-                                                <constraint firstItem="KW0-xA-dmT" firstAttribute="top" secondItem="LCV-Mi-wFb" secondAttribute="top" id="yCn-OI-NfA"/>
+                                                <constraint firstAttribute="bottom" secondItem="KW0-xA-dmT" secondAttribute="bottom" constant="3" id="xKL-dU-oK6"/>
+                                                <constraint firstItem="KW0-xA-dmT" firstAttribute="top" secondItem="LCV-Mi-wFb" secondAttribute="top" constant="3" id="yCn-OI-NfA"/>
                                                 <constraint firstItem="pkQ-Ma-FgE" firstAttribute="centerY" secondItem="LCV-Mi-wFb" secondAttribute="centerY" id="yS5-DF-Zzf"/>
                                             </constraints>
                                         </tableViewCellContentView>
